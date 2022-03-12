@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Waleed Rafi 4006</title>
+    <link rel="icon" href="dice_6.png" />
+    <script src="rollDice.js"></script>
+  </head>
+
+  <body>
+    <div class="my-info">
+      <div class="my-name">WALEED RAFI</div>
+      <div class="my-regno">4006-FBAS/BSCS4/F18(A)</div>
+    </div>
+    <div class="dice-main">
+      <div class="dice-container">
+        <div id="die1" class="dice-image"></div>
+        <div id="die2" class="dice-image"></div>
+        <div id="die3" class="dice-image"></div>
+        <div id="die4" class="dice-image"></div>
+        <div id="die5" class="dice-image"></div>
+        <div id="die6" class="dice-image"></div>
+      </div>
+      <div class="dice-container">
+        <div id="die7" class="dice-image"></div>
+        <div id="die8" class="dice-image"></div>
+        <div id="die9" class="dice-image"></div>
+        <div id="die10" class="dice-image"></div>
+        <div id="die11" class="dice-image"></div>
+        <div id="die12" class="dice-image"></div>
+      </div>
+    </div>
+    <form action="#">
+      <input class="roll-btn" id="rollButton" type="button" value="Roll Dice" />
+    </form>
+
+    <div id="frequencyTableDiv"></div>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: #cacfd2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid rgb(8, 48, 94);
+    border-collapse: collapse;
+  }
+  .dice-main {
+    background-color: gray;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .dice-container {
+    display: flex;
+    margin: 10px;
+  }
+  .roll-btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #117a65;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .dice-image {
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+  }
+  .my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    color: #633974;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 20px;
+    font-weight: bold;
+  }
+  th {
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #21618c;
+  }
+  td {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+</style>
